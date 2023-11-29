@@ -1,4 +1,4 @@
-import NextAuth, { NextAuthOptions } from "next-auth";
+import { NextAuthOptions } from "next-auth";
 import GitHub from "next-auth/providers/github";
 
 export const authOptions: NextAuthOptions = {
@@ -8,7 +8,4 @@ export const authOptions: NextAuthOptions = {
       clientSecret: process.env.GITHUB_CLIENT_SECRET as string,
     }),
   ],
-  pages: {
-    signIn: "/sign-in",
-  },
 };
