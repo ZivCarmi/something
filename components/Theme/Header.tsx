@@ -9,9 +9,12 @@ const Header = () => {
           <Link href="/">AdvLogo</Link>
         </h1>
         <nav>
-          <ul>
+          <ul className="flex items-center gap-4">
             <li>
-              <Link href="advertisements">List Page</Link>
+              <Link href="/">Posts</Link>
+            </li>
+            <li>
+              <Link href="/payments">Payments</Link>
             </li>
           </ul>
         </nav>
